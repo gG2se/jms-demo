@@ -10,7 +10,8 @@ public class ProducerServiceImpl implements ProducerService {
 
     @Autowired
     private JmsTemplate jmsTemplate;
-    @Resource(name = "queueDestination")
+    @Resource(name = "topicDestination")
+//    @Resource(name = "queueDestination")
     private Destination destination;
 
     @Override
